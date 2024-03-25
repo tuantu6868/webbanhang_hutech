@@ -1,0 +1,6 @@
+﻿.btn-register:hover,
+.btn-login:hover,
+.btn-logout:hover {
+    color: ActiveBorder;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Tạo hiệu ứng box-shadow màu xanh khi di chuột vào */
+}
