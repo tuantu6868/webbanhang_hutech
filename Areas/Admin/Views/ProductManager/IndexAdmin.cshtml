@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<NguyenDaiHiep_2180605809_week_three.Models.Product>
 @{
-	ViewData["Title"] = "Index";
+	ViewData["Title"] = "IndexAdmin";
 	Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <div>
 	<p>
-		@Html.ActionLink("Create New", "Add")
+		@Html.ActionLink("Create New", "AddAdmin")
 	</p>
 </div>
 <table class="table">
@@ -43,9 +43,9 @@
 					@Html.DisplayFor(modelItem => product.Category.Name)
 				</td>
 				<td>
-					@Html.ActionLink("Update", "Update", new { id = @product.Id }) |
-					@Html.ActionLink("Display", "Display", new { id = @product.Id }) |
-					@Html.ActionLink("Delete", "Delete", new { id = @product.Id })
+					@Html.ActionLink("Update", "UpdateAdmin", new { id = @product.Id }) |
+					@Html.ActionLink("Display", "DisplayAdmin", new { id = @product.Id }) |
+					@Html.ActionLink("Delete", "DeleteAdmin", new { id = @product.Id })
 				</td>
 			</tr>
 		}

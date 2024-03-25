@@ -83,6 +83,10 @@ namespace NguyenDaiHiep_2180605809_week_three.Areas.Identity.Pages.Account
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                // Thêm setting cho Admin
+
+
+
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
